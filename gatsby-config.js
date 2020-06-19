@@ -3,9 +3,9 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Casper',
-    description: 'A port of the casper blog built for gatsby',
-    siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
+    title: '우성짱의 Gatsby Ghost',
+    description: '가츠비에서 생성된 정적페이지를 고스트의 캐스퍼 테마와 연결했습니다.',
+    siteUrl: 'https://casper.woosung.vercel.app', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
