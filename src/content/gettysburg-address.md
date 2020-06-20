@@ -1,6 +1,6 @@
 ---
 title: 'Gettysburg Address'
-author: [Another Author]
+author: [Woosung]
 tags: 
   - Google Cloud
 image: img/demo1.jpg
