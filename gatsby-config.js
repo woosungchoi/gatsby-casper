@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: 'Woosung Blog',
     description: '가츠비에서 생성된 정적페이지를 고스트의 캐스퍼 테마와 연결했습니다.',
-    siteUrl: 'https://casper.woosung.vercel.app', // full path to blog - no ending slash
+    siteUrl: 'https://blog.wsgvet.com', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
@@ -72,7 +72,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-XXXX-Y',
+        trackingId: 'UA-42656743-2',
         // Puts tracking script in the head instead of the body
         head: true,
         // IP anonymization for GDPR compliance
