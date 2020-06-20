@@ -49,8 +49,8 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: '우성짱의 Gatsby Ghost',
-  description: '가츠비에서 생성된 정적페이지를 고스트의 캐스퍼 테마와 연결했습니다.',
+  title: 'Woosung Blog',
+  description: 'Home server, CMS, WEB and ideas.',
   coverImage: 'img/blog-cover.png',
   logo: 'img/ghost-logo.png',
   lang: 'ko',

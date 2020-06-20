@@ -8,8 +8,6 @@ import styled from '@emotion/styled';
 import { colors } from '../../styles/colors';
 import { SocialLink, SocialLinkFb } from '../../styles/shared';
 import config from '../../website-config';
-import { Facebook } from '../icons/facebook';
-import { Twitter } from '../icons/twitter';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavLogo } from './SiteNavLogo';
 
@@ -92,10 +90,16 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 <Link to="/">Home</Link>
               </li>
               <li role="menuitem">
-                <Link to="/about">About</Link>
+                <Link to="/tags/free">PROJECT</Link>
               </li>
               <li role="menuitem">
-                <Link to="/tags/getting-started/">Getting Started</Link>
+                <Link to="/tags/google-cloud/">CLOUD</Link>
+              </li>
+	      <li role="menuitem">
+                <Link to="/tags/ghost/">GHOST</Link>
+              </li>
+	      <li role="menuitem">
+                <Link to="/author/woosung/">AUTHOR</Link>
               </li>
             </ul>
             {isPost && (
@@ -106,35 +110,11 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
           </SiteNavContent>
         </SiteNavLeft>
         <SiteNavRight>
-          <SocialLinks>
-            {config.facebook && (
-              <a
-                className="social-link-fb"
-                css={[SocialLink, SocialLinkFb]}
-                href={config.facebook}
-                target="_blank"
-                title="Facebook"
-                rel="noopener noreferrer"
-              >
-                <Facebook />
-              </a>
-            )}
-            {config.twitter && (
-              <a
-                css={SocialLink}
-                href={config.twitter}
-                title="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter />
-              </a>
-            )}
-          </SocialLinks>
           {config.showSubscribe && (
             <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
           )}
           {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
+	  <a href="/rss.xml">RSS</a>
         </SiteNavRight>
       </nav>
     );
