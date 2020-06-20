@@ -46,7 +46,7 @@ export const ReadNextCard: React.FC<ReadNextProps> = props => {
             // 2018-08-20
             const datetime = format(date, 'yyyy-MM-dd');
             // 20 AUG 2018
-            const displayDatetime = format(date, 'dd LLL yyyy');
+            const displayDatetime = format(date, 'yyyy-MM-dd');
             return (
               <li key={n.node.frontmatter.title}>
                 <h4>
