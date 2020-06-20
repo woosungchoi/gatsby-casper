@@ -1,6 +1,6 @@
 ---
 title: 'Great Gatsby'
-author: [Another Author]
+author: [Woosung]
 tags:
   - Free
 image: img/marvin-meyer-794521-unsplash.jpg
