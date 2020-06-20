@@ -1,6 +1,6 @@
 - id: Woosung
   avatar: avatars/woosung.png
-  bio: 홈서버와 블로그, 그리고 취미생활을 공유하고 싶은 우성짱입니다. ghost를 이용하여 블로그를 운영하고 있습니다.
+  bio: 홈서버와 블로그, 그리고 취미생활을 공유하고 싶은 우성짱입니다. ghost로 운영하다가 현재는 Gatsby 정적사이트로 왔습니다.
   website: https://www.wsgvet.com/
   location: South Korea
   profile_image: img/author/author-woosung.jpg
