@@ -1,3 +1,18 @@
 - id: speeches
+  description: 스피치와 관련된 글입니다.
+  image: img/tags/google-cloud.jpg
+- id: source
   description: Some of the greatest words ever spoken.
   image: img/speeches-cover.jpg
+- id: Free
+  description: 완전 무료 홈페이지 구축 및 운영에 대한 정보글 모음입니다.
+  image: img/tags/free.jpg
+- id: getting started
+  description: Some of the greatest words ever spoken.
+  image: img/speeches-cover.jpg
+- id: Google Cloud
+  description: 구글 클라우드와 함께하는 여행을 담았습니다.
+  image: img/tags/google-cloud.jpg
+- id: ghost
+  description: ghost 관련 팁 모음입니다.
+  image: img/tags/ghost-cms.jpg

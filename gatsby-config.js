@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: '우성짱의 Gatsby Ghost',
+    title: 'Woosung Blog',
     description: '가츠비에서 생성된 정적페이지를 고스트의 캐스퍼 테마와 연결했습니다.',
     siteUrl: 'https://casper.woosung.vercel.app', // full path to blog - no ending slash
   },

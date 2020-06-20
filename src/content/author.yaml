@@ -1,10 +1,9 @@
-- id: Ghost
-  avatar: avatars/ghost.png
-  bio: The professional publishing platform
-  twitter: TryGhost
-  facebook: ghost
-  website: https://ghost.org/
-  location: San Francisco
+- id: Woosung
+  avatar: avatars/woosung.png
+  bio: 홈서버와 블로그, 그리고 취미생활을 공유하고 싶은 우성짱입니다. ghost를 이용하여 블로그를 운영하고 있습니다.
+  website: https://www.wsgvet.com/
+  location: South Korea
+  profile_image: img/author/author-woosung.jpg
 - id: Another Author
   avatar: avatars/ghost.png
   bio: This is another test author with a profile background image
