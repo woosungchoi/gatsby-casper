@@ -20,6 +20,7 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
+import { DiscussionEmbed } from "disqus-react";
 
 export interface Author {
   id: string;
@@ -117,6 +118,13 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
   const datetime = format(date, 'yyyy-MM-dd');
   // 20 AUG 2018
   const displayDatetime = format(date, 'yyyy-MM-dd');
+  
+  const disqusShortname = "woosung-blog";
+  const disqusConfig = {
+  url: `https://blog.wsgvet.com${this}`,
+  identifier: `${this}`,
+  title: post.frontmatter.title,
+};
 
   return (
     <IndexLayout className="post-template">
@@ -232,7 +240,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
-
+		<DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
             </article>
