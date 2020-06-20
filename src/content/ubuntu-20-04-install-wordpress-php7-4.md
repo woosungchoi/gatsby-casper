@@ -5,7 +5,7 @@ author: [Woosung]
 tags: 
   - Google Cloud
 image: img/ubuntu-20-04-install-wordpress-php7-4/wordpress-cover.jpg
-date: '2020-05-28T12:30:33.000Z'
+date: '2020-06-05T16:20:31.000Z'
 excerpt: 구글 클라우드 컴퓨트 엔진에 우분투 설치 후 기본 셋팅에 관한 내용입니다. 방화벽 설정, 스왑파일 생성, 시간 설정 방법에 대해 알려드리겠습니다.
 draft: false
 ---
