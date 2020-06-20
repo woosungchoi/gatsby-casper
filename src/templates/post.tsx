@@ -258,7 +258,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
-			<Utterances repo="iamchanii/blog" />
+			<Utterances repo="/woosungchoi/gatsby-casper" />
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
             </article>
