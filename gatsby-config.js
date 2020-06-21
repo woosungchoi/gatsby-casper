@@ -44,7 +44,8 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 2000,
-              quality: 100,
+              quality: 82,
+			  withWebp: true,
             },
           },
         ],
@@ -54,7 +55,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-casper.netlify.com',
+        siteUrl: 'https://blog.wsgvet.com',
       },
     },
     'gatsby-plugin-emotion',
