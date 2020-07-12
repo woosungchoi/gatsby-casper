@@ -3,7 +3,6 @@ import { graphql, Link } from 'gatsby';
 import Img, { FluidObject } from 'gatsby-image';
 import * as _ from 'lodash';
 import { lighten, setLightness } from 'polished';
-import React, { createRef, useLayoutEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { css } from '@emotion/core';
@@ -20,6 +19,7 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
+import { DiscussionEmbed } from "disqus-react";
 
 export interface Author {
   id: string;
@@ -30,32 +30,6 @@ export interface Author {
     }>;
   };
 }
-
-const src = 'https://utteranc.es/client.js';
-export interface IUtterancesProps {
-    repo: string;
-}
-const Utterances: React.FC<IUtterancesProps> = React.memo(({ repo }) => {
-    const containerRef = createRef<HTMLDivElement>();
-    useLayoutEffect(() => {
-        const utterances = document.createElement('script');
-        const attributes = {
-            src,
-            repo,
-            'issue-term': 'url',
-            label: 'comment',
-            theme: 'github-light',
-            crossOrigin: 'anonymous',
-            async: 'true',
-        };
-        Object.entries(attributes).forEach(([key, value]) => {
-            utterances.setAttribute(key, value);
-        });
-        containerRef.current.appendChild(utterances);
-    }, [repo]);
-    return <div ref={containerRef} />;
-});
-Utterances.displayName = 'Utterances';
 
 interface PageTemplateProps {
   pathContext: {
@@ -143,6 +117,11 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
   const datetime = format(date, 'yyyy-MM-dd');
   // 20 AUG 2018
   const displayDatetime = format(date, 'yyyy-MM-dd');
+  
+  const disqusShortname = "woosung-blog";
+  const disqusConfig = {
+    config: { identifier: props.pathContext.slug },
+  };
 
   return (
     <IndexLayout className="post-template">
@@ -258,7 +237,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
-			<Utterances repo="woosungchoi/gatsby-casper" />
+              <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
             </article>
