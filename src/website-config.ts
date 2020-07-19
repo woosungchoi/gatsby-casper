@@ -54,7 +54,7 @@ const config: WebsiteConfig = {
   coverImage: 'img/blog-cover.png',
   logo: 'img/ghost-logo.png',
   lang: 'ko',
-  siteUrl: 'https://blog.wsgvet.com',
+  siteUrl: 'https://casper.woosung.vercel.app/',
   facebook: 'https://www.facebook.com/ghost',
   twitter: 'https://twitter.com/tryghost',
   showSubscribe: false,
